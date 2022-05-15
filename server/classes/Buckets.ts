@@ -23,9 +23,12 @@ const Buckets = new BucketManager();
 
 export const setPlayerBucket = (source: string, bucket: number) =>
 Buckets.setPlayerBucket(source, bucket);
+global.exports('setPlayerBucket', setPlayerBucket);
 
 export const setEntityBucket = (entity: number, bucket: number) =>
     Buckets.setEntityBucket(entity, bucket);
+global.exports('setEntityBucket', setEntityBucket);
 
 export const addEntityToPlayerBucket = (entity: number, source: string) =>
     Buckets.addEntityToPlayerBucket(entity, source);
+global.exports('AddEntityToPlayerBucket', AddEntityToPlayerBucket);
